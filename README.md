@@ -33,20 +33,16 @@ klutchell/gogetstuff
 * ```-e SERVER_PASSWORD=``` - Usenet server password. Leave blank if not required.
 * ```-e SERVER_CONNECTIONS=``` - Number of simultaneous connections. You pretty much just have to test with varying numbers until you hit a reasonable amount for your server and internet connection.
 * ```-e SERVER_TLS_ENABLED=``` - Encryption ('on' or 'off').
-* ```-v </path/to/config>:/config``` - Host directory for storing persistent configuration (optional).
+* ```-v <path/to/config>:/config``` - Host directory for storing persistent configuration (optional).
 * ```-v <path/to/uploads>:/uploads``` - Host directory with files requiring upload. Everything in this dir will be uploaded on every run so keep it clean.
 
 ## Configuration ##
 
 To maintain confguration parameters between runs just provide the ```-v </path/to/config>:/config``` volume mount. Configuration will be saved in ```</path/to/config>/.gopoststuff.conf``` after the first run.
 
-To change existing saved parameters, just provide new values from the docker run command and the old values will be overwritten. Or optionally edit ```</path/to/config>/.gopoststuff.conf``` manually.
+To change existing saved parameters, just provide new values from the docker run command and the old values will be overwritten. Or optionally edit ```</path/to/config>/.gopoststuff.conf``` on the host manually.
 
 Note that ```POST_GROUP``` and ```POST_SUBJECT``` will still be required on every run.
-
-## Contributing ##
-
-* n/a
 
 ## Author ##
 
