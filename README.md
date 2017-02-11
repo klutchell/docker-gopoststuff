@@ -38,9 +38,11 @@ klutchell/gogetstuff
 
 ## Configuration ##
 
-To maintain confguration parameters between runs just provide the ```-v </path/to/config>:/config``` volume mount path.
+To maintain confguration parameters between runs just provide the ```-v </path/to/config>:/config``` volume mount. Configuration will be saved in ```</path/to/config>/.gopoststuff.conf``` after the first run.
 
-Note that ```POST_GROUP``` and ```POST_SUBJECT``` will still be required on every run. The other environment parameters will be saved in </path/to/config>/.gopoststuff.conf after the first run.
+To change existing saved parameters, just provide new values from the docker run command and the old values will be overwritten. Or optionally edit ```</path/to/config>/.gopoststuff.conf``` manually.
+
+Note that ```POST_GROUP``` and ```POST_SUBJECT``` will still be required on every run.
 
 ## Contributing ##
 
