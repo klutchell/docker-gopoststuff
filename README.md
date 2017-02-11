@@ -10,7 +10,7 @@ Uses [golang:alpine](https://hub.docker.com/_/golang/) base image with [ERR1R](h
 
 ```bash
 $ docker run \
---name=gogetstuff \
+--name=gopoststuff \
 -e "POST_FROM=User <teSPAMst@examNOSPAMple.com>" \
 -e "POST_GROUP=alt.binaries.test.yenc" \
 -e "POST_SUBJECT=my test upload"
@@ -20,7 +20,7 @@ $ docker run \
 -e SERVER_PASSWORD=topsecret \
 -v </path/to/config>:/config \
 -v <path/to/uploads>:/uploads \
-klutchell/gogetstuff
+klutchell/gopoststuff
 ```
 
 ## Parameters ##
