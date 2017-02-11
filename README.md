@@ -2,13 +2,9 @@
 
 ## Description ##
 
-Run [ERR1R](https://github.com/ERR1R)'s fork of [GoPostStuff](https://github.com/ERR1R/GoPostStuff) to upload multiple local files to a usenet server of your choosing.
+Docker image to upload multiple local files to a usenet server of your choosing.
 
-Image is based on golang:alpine.
-
-Image | Size | Version
---- | --- | ---
-[golang:alpine](https://hub.docker.com/_/golang/) | [![](https://images.microbadger.com/badges/image/golang:alpine.svg)](https://microbadger.com/images/golang:alpine) | [![](https://images.microbadger.com/badges/version/golang:alpine.svg)](https://microbadger.com/images/golang:alpine)
+Uses [golang:alpine](https://hub.docker.com/_/golang/) base image with [ERR1R](https://github.com/ERR1R)'s fork of [GoPostStuff](https://github.com/ERR1R/GoPostStuff) for uploads.
 
 ## Usage ##
 
